@@ -17,18 +17,16 @@ import java.util.ArrayList;
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
 
     ArrayList<Book> list;
-    Context context;
 
-    public CustomAdapter(Context context, ArrayList<Book> list) {
+    public CustomAdapter( ArrayList<Book> list) {
         this.list = list;
-        this.context = context;
     }
 
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(context).inflate(R.layout.layout_books, viewGroup,false);
+        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.layout_books, viewGroup,false);
         ViewHolder viewHolder = new ViewHolder(v);
         return viewHolder;
     }

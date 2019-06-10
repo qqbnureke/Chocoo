@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void setBooksToList() {
-        recyclerView.setAdapter(new CustomAdapter(MainActivity.this, booksList));
+        recyclerView.setAdapter(new CustomAdapter(booksList));
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
     }
 

@@ -1,9 +1,9 @@
 package com.nurda.chocotask.model;
 
 public class Book implements Comparable<Book>{
-    String name;
-    int pageCount;
-    int price;
+    private String name;
+    private int pageCount;
+    private int price;
 
     public Book(String name, int pageCount, int price) {
         this.name = name;
